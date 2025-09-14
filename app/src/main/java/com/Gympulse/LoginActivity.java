@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.Gympulse.data.data_ALIMENTO.AcessoAoBancoDeDadosMacro;
+import com.Gympulse.data.dataAlimentos.AcessoAoBancoDeDadosMacro;
 import com.Gympulse.databinding.ActivityLoginBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import androidx.appcompat.app.AppCompatDelegate;

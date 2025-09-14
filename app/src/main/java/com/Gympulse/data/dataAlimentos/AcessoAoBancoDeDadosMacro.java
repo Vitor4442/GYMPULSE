@@ -1,4 +1,4 @@
-package com.Gympulse.data.data_ALIMENTO;
+package com.Gympulse.data.dataAlimentos;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +12,6 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class AcessoAoBancoDeDadosMacro extends AppCompatActivity {
