@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.Gympulse.data.data_ALIMENTO.AcessoAoBancoDeDadosMacro;
 import com.Gympulse.databinding.ActivityCadastroBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -55,7 +57,7 @@ public class CadastroActivity extends AppCompatActivity {
         ).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
                 finish();
-                startActivity(new Intent(this, Calculator_Macro.class));
+                startActivity(new Intent(this, AcessoAoBancoDeDadosMacro.class));
             } else {
                 binding.progressBar.setVisibility(View.GONE);
                 Toast.makeText(this,"Ops!Ocorreu um erro!", Toast.LENGTH_SHORT).show();

@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".Calculator_Macro"/>
+        <activity android:name=".data.data_ALIMENTO.AcessoAoBancoDeDadosMacro"/>
     </application>
 
 </manifest>

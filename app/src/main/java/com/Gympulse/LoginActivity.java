@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.Gympulse.data.data_ALIMENTO.AcessoAoBancoDeDadosMacro;
 import com.Gympulse.databinding.ActivityLoginBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -48,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         ).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
                 finish();
-                startActivity(new Intent(this, Calculator_Macro.class));
+                startActivity(new Intent(this, AcessoAoBancoDeDadosMacro.class));
             } else {
                 binding.progressBar.setVisibility(View.GONE);
                 Toast.makeText(this,"Ops!Ocorreu um erro!", Toast.LENGTH_SHORT).show();
